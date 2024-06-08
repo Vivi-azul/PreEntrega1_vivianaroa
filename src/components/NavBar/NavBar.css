@@ -1,0 +1,11 @@
+.container-fluid {
+    background-color:aquamarine;
+}
+.titulo1 {
+    display: flex;
+    justify-content: center;
+}
+.carrito {
+    display: flex;
+    justify-content: end;
+}
