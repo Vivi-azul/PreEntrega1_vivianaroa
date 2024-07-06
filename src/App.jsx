@@ -1,15 +1,27 @@
 import './App.css'
-import Navbar from "./components/NavBar/NavBar"
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
+import ItemCount from './components/ItemCount/ItemCount.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Carrito from "./components/Carrito/Carrito";
+// import Error from "./components/Ejemplos/Error";
 
 function App() {
-  
 
   return (
-    <div>
-      <Navbar/>
-      <ItemListContainer saludo="Bienvenido a Patitas" />
-    </div>
+    <BrowserRouter>
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
+        <Route path="/detalle/:idProducto" element={<ItemDetailContainer />} />
+        <Route path="/carrito" element={<Carrito />} />
+
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
