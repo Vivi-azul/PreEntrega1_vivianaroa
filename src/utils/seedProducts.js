@@ -1,9 +1,12 @@
+import db from "../db/db.js"
+import { addDoc, collection } from "firebase/firestore"
+
 const productos = [
     {
       id: "Adff21",
       nombre: "Pedigree Adulto",
       descripcion: "Sabor carne, pollo y cereales - Alimento 100% completo y balanceado para perros adultos",
-      stock: 15,
+      stock: 5,
       categoria: "alimentos",
       imagen: "/img/pedigree_adulto.png",
       precio: 3000
@@ -30,7 +33,7 @@ const productos = [
       id: "Htm123",
       nombre: "Purina : Pro Plan",
       descripcion: "Es una comida para que ayuda a los perros de razas medianas a mantenerse fuertes y llenos de vitalidad. Esta fórmula ofrece, a través de sus sabrosas croquetas, un contenido rico en proteínas (26%) y grasas (15%), utilizando como ingrediente principal carne fresca de pollo, que ayuda a los perros a mantener la masa corporal magra y músculos fuertes.",
-      stock: 14,
+      stock: 3,
       categoria: "alimentos",
       imagen: "/img/purina-pro-plan-perros-adult-razas-mediana.png",
       precio: 4000
@@ -39,7 +42,7 @@ const productos = [
       id: "Jfw222",
       nombre: "Collarin de Paseo",
       descripcion: "Collar de Nylon para paseo",
-      stock: 6,
+      stock: 1,
       categoria: "accesorios y juguetes",
       imagen: "/img/collar-de-nylon.jpg",
       precio: 2200
@@ -48,7 +51,7 @@ const productos = [
       id: "Gtm222",
       nombre: "Bulldog",
       descripcion: "Pequeño bulldog de 3 años",
-      stock: 10,
+      stock: 3,
       categoria: "adopciones",
       imagen: "/img/bulldog.png",
       precio: "Adoptame!"
@@ -57,7 +60,7 @@ const productos = [
       id: "Gtm221",
       nombre: "Chiwuawua",
       descripcion: "Tierno y gracioso chiwuawua, de 2 años.",
-      stock: 12,
+      stock: 3,
       categoria: "adopciones",
       imagen: "/img/chiwuawua.jpg",
       precio: "Adoptame!"
@@ -116,5 +119,12 @@ const productos = [
       }, 1000)
     })
   }
-  
-  export { obtenerProductos }
+
+  const seedProducts = () => {
+    productos.map(( {id, ...rest} ) => {
+        const productosRef = collection(db, "productos")
+        addDoc( productosRef, rest )
+    });
+  }
+
+  seedProducts()

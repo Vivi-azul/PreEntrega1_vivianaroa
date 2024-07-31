@@ -1,4 +1,14 @@
+import  ItemCount from "../ItemCount/ItemCount.jsx";
+
 const ItemDetail = ({ producto }) => {
+
+  const agregarAlCarrito = (contador) => {
+    const productoCarrito = {
+      ...producto,
+      cantidad: contador
+    }
+
+  }
     return (
       <div className="item-detail">
         <img src={producto.imagen} alt="" />
@@ -6,6 +16,7 @@ const ItemDetail = ({ producto }) => {
           <h2>{producto.nombre}</h2>
           <p>{producto.descripcion}</p>
           <p>precio: ${producto.precio}</p>
+          <ItemCount agregarAlCarrito={agregarAlCarrito} />
         </div>
       </div>
     );
