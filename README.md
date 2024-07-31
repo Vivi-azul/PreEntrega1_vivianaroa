@@ -11,7 +11,7 @@
 Este es un proyecto de ecommerce de productos para mascotas. Tanto comida, juguetes y recomendaciones de cuidado.
 
 ## Librerias
-`react` `Firebase` `react-icons` `react-dom` `Bootstrap`
+`react` `Firebase` `react-icons` `react-dom` `react-router-dom` `yup`  `Bootstrap` 
 
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh

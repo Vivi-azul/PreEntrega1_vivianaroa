@@ -1,14 +1,14 @@
 import React from 'react'
+import "./NavBar.css"
 import logoPataPerro from "../../img/logo_pata.webp"
 import CartWidget from './CartWidget'
-import "./NavBar.css"
+
 
 const NavBar = () => {
   return (
-    <nav>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
-  <div>
+     <div className="container-fluid">
+     <div>
             
       </div>
     <a className="navbar-brand" href="#"><img src={logoPataPerro} width = {110} alt="" /></a>
@@ -17,21 +17,19 @@ const NavBar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        {/* <a className="nav-link active" aria-current="page" href="#">Inicio</a> */}
         <a className="nav-link" href="#">Alimentos</a>
         <a className="nav-link" href="#">Accesorios y Juguetes</a>
         <a className="nav-link" href="#">Recomendaciones</a>
 
-        <CartWidget />
+        
       </div>
       
       
     </div>
   </div>
+
+  <CartWidget />
   </nav>
-       
-      
-   </nav>
   )
 }
 

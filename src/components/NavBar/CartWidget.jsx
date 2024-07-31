@@ -1,12 +1,20 @@
-import React from 'react'
-import { FiShoppingCart } from "react-icons/fi";
+import { CartContext } from "../../context/CartContext";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+
+import { FaCartShopping } from "react-icons/fa6";
 
 const CartWidget = () => {
+
+  const { cantidadTotal } = useContext(CartContext)
+
+  let cantidad = cantidadTotal()
+
   return (
-    <div className="carrito">
-        <FiShoppingCart size={30} />
-    </div>
+    <Link to="/carrito" className="cartwidget">
+      <FaCartShopping size={35} />
+      <p>{ cantidad > 0 && cantidad }</p>
+    </Link>
   )
 }
-
 export default CartWidget
