@@ -1,8 +1,6 @@
 import React from 'react'
 import "./NavBar.css"
-import logoPataPerro from "../../img/logo_pata.webp"
 import CartWidget from './CartWidget'
-
 
 const NavBar = () => {
   return (
@@ -11,7 +9,7 @@ const NavBar = () => {
      <div>
             
       </div>
-    <a className="navbar-brand" href="#"><img src={logoPataPerro} width = {110} alt="" /></a>
+    <a className="navbar-brand" href="#"><img src="/img/logo-patita.png" alt="Logo Patita" width = {110} /></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

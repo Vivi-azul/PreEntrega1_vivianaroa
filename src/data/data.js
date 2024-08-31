@@ -5,7 +5,7 @@ const productos = [
       descripcion: "Sabor carne, pollo y cereales - Alimento 100% completo y balanceado para perros adultos",
       stock: 15,
       categoria: "alimentos",
-      imagen: "/img/pedigree_adulto.png",
+      imagen: "public/img/pedigree_adulto.png",
       precio: 3000
     },
     {
@@ -14,7 +14,7 @@ const productos = [
       descripcion: "En cada croqueta encontrarás un alimento 100% balanceado, con probióticos naturales que equilibran su flora intestinal, omegas 6 y 3 y niveles de sodio adecuados.",
       stock: 10,
       categoria: "alimentos",
-      imagen: "",
+      imagen: "public/img/dogchow.png",
       precio: 2500
     },
     {
@@ -23,7 +23,7 @@ const productos = [
       descripcion: "Los juguetes para perros Dura Play también vienen en una variedad de tamaños y colores: pelota y un anillo doble con bola. En cada paquete encontraras 3 colores diferentes",
       stock: 21,
       categoria: "accesorios y juguetes",
-      imagen: "/img/pelotapara_perro_colores",
+      imagen: "public/img/pelotapara_perro_colores.jpg",
       precio: 5000
     },
     {
@@ -32,7 +32,7 @@ const productos = [
       descripcion: "Es una comida para que ayuda a los perros de razas medianas a mantenerse fuertes y llenos de vitalidad. Esta fórmula ofrece, a través de sus sabrosas croquetas, un contenido rico en proteínas (26%) y grasas (15%), utilizando como ingrediente principal carne fresca de pollo, que ayuda a los perros a mantener la masa corporal magra y músculos fuertes.",
       stock: 14,
       categoria: "alimentos",
-      imagen: "/img/purina-pro-plan-perros-adult-razas-mediana.png",
+      imagen: "public/img/purina-pro-plan-perros-adult-razas-medianas.png",
       precio: 4000
     },
     {
@@ -41,7 +41,7 @@ const productos = [
       descripcion: "Collar de Nylon para paseo",
       stock: 6,
       categoria: "accesorios y juguetes",
-      imagen: "/img/collar-de-nylon.jpg",
+      imagen: "public/img/collar-de-nylon.jpg",
       precio: 2200
     },
     {
@@ -50,7 +50,7 @@ const productos = [
       descripcion: "Pequeño bulldog de 3 años",
       stock: 10,
       categoria: "adopciones",
-      imagen: "/img/bulldog.png",
+      imagen: "public/img/bulldog.png",
       precio: "Adoptame!"
     },
     {
@@ -59,7 +59,7 @@ const productos = [
       descripcion: "Tierno y gracioso chiwuawua, de 2 años.",
       stock: 12,
       categoria: "adopciones",
-      imagen: "/img/chiwuawua.jpg",
+      imagen: "public/img/chiwuawua.jpg",
       precio: "Adoptame!"
     },
     {
@@ -68,7 +68,7 @@ const productos = [
       descripcion: "Raza dalmata de 4 años",
       stock: 5,
       categoria: "adopciones",
-      imagen: "/img/dalmata.png",
+      imagen: "public/img/dalmata.png",
       precio: "Adoptame!"
     },
     {
@@ -77,7 +77,7 @@ const productos = [
       descripcion: "Este pequeño cachorro de solo 5 meses, muy tienro y astuto.",
       stock: 6,
       categoria: "adopciones",
-      imagen: "/img/cachorro_labrador.png",
+      imagen: "public/img/cachorro_labrador.png",
       precio: "Adoptame!"
     },
     {
@@ -86,7 +86,7 @@ const productos = [
       descripcion: "Este alimento seco para perro adulto de 25 kg sabor carne y arroz, proporciona todo lo necesario para que tu perro crezca fortalecido",
       stock: 7,
       categoria: "alimentos",
-      imagen: "/img/cachupin_comida.webp",
+      imagen: "public/img/cachupin_comida.webp",
       precio: 2500
     },
     {
@@ -95,7 +95,7 @@ const productos = [
       descripcion: "Juguete para perros con forma de hueso",
       stock: 30,
       categoria: "accesorios y juguetes",
-      imagen: "/img/juguete_formadehueso",
+      imagen: "public/img/juguete_formadehueso.jpg",
       precio: 1500
     },
     {
@@ -104,7 +104,7 @@ const productos = [
       descripcion: "Cepillo para peinar a perro, utilizalo en seco o durante su baño.",
       stock: 15,
       categoria: "accesorios y juguetes",
-      imagen: "/img/cepilloperro_para_peinar",
+      imagen: "public/img/cepilloperro_para_peinar.jpg",
       precio: 750
     },
     {
