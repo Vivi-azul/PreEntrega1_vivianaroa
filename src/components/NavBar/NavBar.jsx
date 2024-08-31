@@ -17,9 +17,9 @@ const NavBar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <a className="nav-link" href="#">Alimentos</a>
-        <a className="nav-link" href="#">Accesorios y Juguetes</a>
-        <a className="nav-link" href="#">Recomendaciones</a>
+        <a className="nav-link" href="/categoria/alimentos">Alimentos</a>
+        <a className="nav-link" href="/categoria/accesorios y juguetes">Accesorios y Juguetes</a>
+        <a className="nav-link" href="recomendaciones">Recomendaciones</a>
 
         
       </div>

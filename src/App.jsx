@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
+import { CartProvider } from './context/CartContext.jsx';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
 import ItemCount from './components/ItemCount/ItemCount.jsx';
-import { CartProvider } from './context/CartContext.jsx';
 import Carrito from "./components/Carrito/Carrito.jsx";
 import Checkout from "./components/Checkout/checkout.jsx";
 

@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+// import Carrito from "../components/Carrito/Carrito";
 
 const CartContext = createContext();
 
@@ -7,6 +8,8 @@ const CartProvider = ({ children }) => {
 
   const agregarProducto = (producto) => {
     const condicion = estaEnElCarrito(producto.id);
+    console.log('Producto a agregar:', producto);
+  console.log('¿Está en el carrito?', condicion);
 
     if (condicion) {
       

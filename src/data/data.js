@@ -106,6 +106,14 @@ const productos = [
       categoria: "accesorios y juguetes",
       imagen: "/img/cepilloperro_para_peinar",
       precio: 750
+    },
+    {
+      id: "Tmy548",
+      nombre: "Recomendaciones para cuidado y salud de tu mascota",
+      descripcion: "Identifica a tu Mascota con un microchip ó Chapa de identificación. Proporcionale una dieta saludable y equilibrada. Programa visitas regulares al veterinario como parte de una rutina de cuidado preventivo. Si quieres saber mas, contrata nuestros servicios, los cuales incluyen adiestramiento canino",
+      stock: 10000,
+      categoria: "recomendaciones",
+      precio: 25000
     }
   ]
   
